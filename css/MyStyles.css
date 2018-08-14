@@ -1,0 +1,15 @@
+.my-bg-blue{
+	background: #416293;
+}
+
+main {
+	overflow-x: hidden;	
+}
+
+main section{
+	position: relative;
+}
+
+main section textarea{
+	min-height: 100px;
+}

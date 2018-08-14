@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/MyStyles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+	<h1 class="text-white p-5 text-center my-bg-blue">Examen de Clase</h1>
+	<main>
+		<section id="questionContainer" class="mt-5 w-75 mx-auto p-4 alert-info text-center">
+			<h2 id="questionNumberQuiz" class="mb-4" >Pregunta # de #</h2>
+			<h3 id="questionTitle">Pregunta</h3>
+			<p id="questionDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+			<label class="d-block">Respuesta:</label>
+			<textarea id="answer" class="w-75"></textarea>
+			<div class="my-4 w-75 mx-auto d-flex justify-content-around">
+				<button 
+						id="previousButton" 
+						class="btn btn-info" 
+						onclick="window.myQuiz.goToPreviousQuestion();">
+					&lt;- ANTERIOR
+				</button>
+				<button 
+					id="nextButton" 
+					class="btn btn-info"
+					onclick="window.myQuiz.goToNextQuestion();">
+					SIGUIENTE -&gt;
+				</button>
+				<button 
+					id="finishButton" 
+					class="btn btn-danger"
+					onclick="window.myQuiz.finishQuiz();">
+					TERMINAR
+				</button>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/quiz.js"></script>
+<script type="text/javascript">
+	window.myQuiz.init();
+</script>
